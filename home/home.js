@@ -31,7 +31,7 @@ $(document).ready(function () {
     var Movie2 = makeApp("Villians Incorported",'Comedy',"2024-04-19")
     var Movie3 = makeApp("The Grey Man","Action","2022-07-22")
     var Movie4 = makeApp("Harry Potter:Hogwarts Mystery","Sci-Fiction","2024-04-25")
-    
+    console.log("hello")
     function displayAll() {
         this.movieList.map(function (ele) {
             $("body").append(`
