@@ -1,3 +1,15 @@
 body {
     background: #131313;
 }
+button {
+    border-radius: 20px;
+    background-color: transparent;
+    /*box-shadow: 5px 0.5px red ;*/
+    border: transparent;
+    
+    width :5%;
+    height: 40px;
+    
+
+}
+
