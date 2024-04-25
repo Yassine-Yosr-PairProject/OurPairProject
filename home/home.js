@@ -23,8 +23,13 @@ function search(arr){
 
 function displayAll() {
     this.movieList.map(function (ele) {
-        $("body").append(`
-            ${ele.movieName}`)
+        $(".movies").append(`
+            <div>
+                <img src="${ele.image}" width="100px" height="100px">
+                <h4>${ele.movieName}</h4>
+                <p>${ele.releaseDate}</p>
+            </div>`
+        )
     })
 }
 
@@ -39,14 +44,12 @@ function addMovie(movieName, Category, releaseDate, image, rating) {
 }
 
 var Web = makeApp('Te3ba la3bed')
-Web.Movie1 = addMovie('6 Hours Away', "Crime", "2024-04-19",)
-Web.Movie2 = addMovie("Villians Incorported", 'Comedy', "2024-04-19")
-Web.Movie3 = addMovie("The Grey Man", "Action", "2022-07-22")
-Web.Movie4 = addMovie("Harry Potter:Hogwarts Mystery", "Sci-Fiction", "2024-04-25")
-
-a.displayAll()
-
-
+Web.addMovie('6 Hours Away', "Crime", "2024-04-19","https://static.wixstatic.com/media/af1176_cd1cc93602cf465fa5e78b3146f4c505~mv2.jpg/v1/fill/w_560,h_840,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/IMG_6044_JPG.jpg")
+Web.addMovie("Villians Incorported", 'Comedy', "2024-04-19","https://static.wixstatic.com/media/af1176_cd1cc93602cf465fa5e78b3146f4c505~mv2.jpg/v1/fill/w_560,h_840,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/IMG_6044_JPG.jpg")
+Web.addMovie("The Grey Man", "Action", "2022-07-22","https://static.wixstatic.com/media/af1176_cd1cc93602cf465fa5e78b3146f4c505~mv2.jpg/v1/fill/w_560,h_840,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/IMG_6044_JPG.jpg")
+Web.addMovie("Harry Potter:Hogwarts Mystery", "Sci-Fiction", "2024-04-25","https://static.wixstatic.com/media/af1176_cd1cc93602cf465fa5e78b3146f4c505~mv2.jpg/v1/fill/w_560,h_840,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/IMG_6044_JPG.jpg")
+console.log(Web)
+Web.displayAll()
 
 
 
