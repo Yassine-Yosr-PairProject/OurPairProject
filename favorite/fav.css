@@ -1,0 +1,31 @@
+img{
+    width :300px;
+    height: 300px;
+    
+    border: transparent;
+    border-radius: 20px;
+}
+h4{
+    font-size: 40px;
+    color:#AF6B09;
+    
+
+}
+.favorite{
+    text-align: center;
+    border: solid transparent;
+    box-shadow:3px 3px 3px 3px #181619;
+    margin: 50px;
+    background-color: #181B22;
+    border-radius: 30px;
+    padding:20px;
+}
+p{
+    color: white;
+}
+.detail-app{
+    display: flex;
+}
+.name{
+    font-size: 100px;
+}

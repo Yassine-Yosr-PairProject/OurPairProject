@@ -4,9 +4,13 @@
     <!------ icon link---->
     
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-    <!--------------------->
-    <link rel="stylesheet" href="/general.css">
-    <link rel="stylesheet" href="/home/home.css">
+    <!---------font link-------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jersey+15&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Sedan:ital@0;1&display=swap" rel="stylesheet">
+    
+<link rel="stylesheet" href="/OurPairProject/general.css">
+    <link rel="stylesheet" href="/OurPairProject/home/home.css">
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,19 +18,27 @@
 </head>
 <body>
     
-    
+    <h1 id="logo">Chey5a la3bed</h1>
     <div class="app">
         <div class="Search-value">
             <input type="text" id="input-value" placeholder="Search">
         </div>
-        <button id="select-movie"></button>
-    </div>
-    
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="./home.js"></script>
+        <button id="select-movie"><span class="material-symbols-outlined">
+            search
+            </span></button>
 
-    <div class="sideBar">
+            <select id="select-cat">
+                <option   value="all">All Movies</option>
+                <option value="Drama">Drama</option>
+                <option value="Comedy">Comedy</option>
+                <option value="Action">Action</option>
+                <option value="Crime">Crime</option>
+                <option value="Sci-Fiction">Sci-Fiction</option>
+            </select>
+
+    </div>
+    <div class="top">
+    <div class="Bar">
         <button id ="home"><a href="/OurPairProject/home/home.html"><span class="material-symbols-outlined">
             home
             </span></a></button>
@@ -37,10 +49,21 @@
             account_circle
             </span></a></button>
     </div>
+
+   
+ </div>
+    
+   
+    
+    
+  
+
+  
     <div class="movies"></div>
 
     <script src="home.js"></script>
 
-   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../home/home.js"></script>
 </body>
 </html>

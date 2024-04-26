@@ -1,15 +1,22 @@
 body {
-    background: #131313;
+    background: #272A31;
 }
 button {
     border-radius: 20px;
-    background-color: transparent;
+    background-color: #181B22;
     /*box-shadow: 5px 0.5px red ;*/
     border: transparent;
-    
-    width :5%;
+    width :40px;
     height: 40px;
     
 
 }
+select {
+    color : white ;
+    background-color: #181B22;
+
+}
+
+
+
 
